@@ -18,6 +18,7 @@ gem 'webpacker'
 
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
+gem 'seed-fu', '~> 2.3'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
