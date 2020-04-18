@@ -1,0 +1,26 @@
+<div class="container">
+<h1>Beers</h1>
+
+<div class="card-group">
+  <div class="column">
+  <% @beers.each_with_index do |beer, index| %>
+    <div class="card bg-light mb-3 ml-2" style="max-width: 18rem;">
+      <div class="card-body">
+        <p class="card-text"><small><b>Beer Name:</b> </small></p>
+        <p class="card-text"><small><%= beer.name %></small></p>
+        <p class="card-text"><small><b>Brewery:</b> </small></p>
+        <p class="card-text"><small><%= beer.brewery%></small></p>
+        <p class="card-text"><small><b>Beer Type:</b></small></p>
+        <p class="card-text"><small><%= beer.beer_type%></small></p>
+        <p class="card-text"><small><b>Beer Description:</b></small></p>
+        <p class="card-text"><small><%= beer.description%></small></p>
+
+    </div>
+  </div>
+  <% end %>
+</div>
+</div>
+</div>
+
+
+
